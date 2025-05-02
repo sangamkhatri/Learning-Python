@@ -1,6 +1,4 @@
 # Day 1
 
-Created on 2025-05-03
-
-What I learned today:
-- [ ] 
+What i learned today.
+what is Python ,It's applicationa and how to use git.
