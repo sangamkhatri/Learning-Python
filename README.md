@@ -34,3 +34,4 @@ This repository will document everything I learn step-by-step â€” starting from 
 
 This repo is beginner-friendly. If you're also starting out, feel free to fork it and follow along!
 
+- [x] Day 1: [day1.py](./day1/day1.py) — _2025-05-03_
