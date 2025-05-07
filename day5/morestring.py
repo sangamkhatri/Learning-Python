@@ -43,4 +43,5 @@ x!=5 #x is not equals to 5
 >= greater or equal to
 <= smaller or equal to
 """
-num = 5:
+num = 5
+print(isinstance(num, float))
