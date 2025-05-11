@@ -88,3 +88,50 @@ bar_out = bar(3)
 print(bar_out)
 calculation = foo_out+bar_out
 print(calculation)
+
+"""Define a function named the_same that takes two inputs (bool, bool) and returns
+True if both inputs are the same
+False otherwise."""
+
+
+def the_same(a, b):
+    if a == b:
+        return True
+    else:
+        return False
+
+
+print(the_same(True, True))
+print(the_same(True, False))
+print(the_same(False, True))
+print(the_same(False, False))
+
+"""Given the function named bar that takes a string input. The function should return the string in lower case.
+
+Press check to debug the code and fix the error."""
+
+
+def bar(s):
+    return s.lower()
+
+
+print(bar("SANGAM"))
+"""Define a function named soup that takes a string input and prints the string in reverse"""
+
+
+def soup(a):
+    print(a[::-1])
+
+
+soup("sangam")
+
+"""Define a function named bat that takes a string input and returns the string in reverse"""
+
+
+def bat(n):
+    return n[::-1]
+
+
+print(bat("sangam"))
+
+"""Define a function named sarah that takes a string input and prints a string containing every 2nd character starting from index 1 to the 3rd last index (exclusive)."""
