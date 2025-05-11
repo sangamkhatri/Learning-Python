@@ -135,3 +135,29 @@ def bat(n):
 print(bat("sangam"))
 
 """Define a function named sarah that takes a string input and prints a string containing every 2nd character starting from index 1 to the 3rd last index (exclusive)."""
+
+
+def sarah(n):
+    print(n[1:-3:2])
+
+
+sarah("sangam is okay and she is okay")
+"""Define a function named bbq_sauce that takes a string input and returns a string containing every 3rd character starting from index 2 to the 3rd last index (exclusive)."""
+
+
+def bbq_sauce(n):
+    return n[2:-2:3]
+
+
+print(bbq_sauce("sangam is sangam and this is why"))
+"""Define a function named print_in_range that takes two int values (say start, and end) and prints all numbers between start and end (inclusive)."""
+
+
+def print_in_range(start, end):
+    for i in range(start, end+1):
+        print(i)
+
+
+print_in_range(1, 10)
+
+"""Define a function named odds_in_range that takes two int values (say start, and end) and counts all numbers between start and end (inclusive) that are odd."""
