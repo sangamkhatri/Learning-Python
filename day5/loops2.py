@@ -4,6 +4,7 @@
 "Wear a heavy jacket", if temperature is below 10
 "Wear a jumper", if temperature is between 10 and 20
 "A t-shirt is fine", if temperature is more than 20."""
+temperature = 10
 if temperature < 10:
     print("Wear a heavy jacket")
 elif 10 <= temperature <= 20:
@@ -27,4 +28,3 @@ sum_multiples = 0
 for i in range(30, 73):  # includes 72
     if i % 3 == 0 and i % 4 == 0:
         sum_multiples += i
-hi there
