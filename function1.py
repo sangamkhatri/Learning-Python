@@ -19,3 +19,12 @@ def check_uv_level(uv_index):
 
 
 print(check_uv_level(3))
+
+"""Given the following incomplete template of add. Complete the function such that it takes two inputs (int, int) and returns their sum"""
+
+
+def add(a, b):
+    return a + b
+
+
+print(add(3, 5))
