@@ -161,3 +161,14 @@ def print_in_range(start, end):
 print_in_range(1, 10)
 
 """Define a function named odds_in_range that takes two int values (say start, and end) and counts all numbers between start and end (inclusive) that are odd."""
+
+
+def odds_in_range(start, end):
+    sum = 0
+    for i in range(start, end+1):
+        if i % 2 != 0:
+            sum += 1
+    print(sum)
+
+
+odds_in_range(1, 10)
