@@ -12,3 +12,36 @@ for i in range(len(theString) - 1):
         count += 1
 
 print("Number of pairs:", count)
+
+"""Sum of even numbers between 1 and 100."""
+sum = 0
+for i in range(1, 100):
+    if i % 2 == 0:
+        sum = +i
+print(sum)
+
+"""Find factorial of a number using a loop."""
+
+n = int(input("Enter a number: "))
+factorial = 1
+
+for i in range(1, n + 1):
+    factorial *= i
+
+print("Factorial of", n, "is", factorial)
+
+"""Print multiplication table of a number n up to 10."""
+num = int(input("enter a number"))
+for i in range(1, 11):
+    print(str(n) + "x" + str(i)+"=" + str(n*i))
+
+"""Reverse a number (e.g., 123 → 321) using a loop."""
+num = int(input("Enter a number: "))
+reverse = 0
+
+while num > 0:
+    digit = num % 10        # Get the last digit
+    reverse = reverse * 10 + digit  # Append digit to reverse
+    num = num // 10         # Remove the last digit
+
+print("Reversed number:", reverse)
