@@ -45,4 +45,3 @@ while num > 0:
     num = num // 10         # Remove the last digit
 
 print("Reversed number:", reverse)
-my exam is on tuesday i do not know what to do no...
