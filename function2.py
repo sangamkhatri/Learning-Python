@@ -84,3 +84,38 @@ def factorial(n):
 
 
 print(factorial(0))
+"""Define a function longest_repeat that takes in a string, and returns the maximum number of times the same character appears consecutively."""
+
+
+def longest_repeat(s):
+    if not s:
+        return 0
+
+    max_count = 1
+    current_count = 1
+
+    for i in range(1, len(s)):
+        if s[i] == s[i - 1]:
+            current_count += 1
+            if current_count > max_count:
+                max_count = current_count
+        else:
+            current_count = 1
+
+    return max_count
+
+
+"""Define a function count_title_case that takes one string input, and returns the number of words that are in "title case".
+
+A word is in title case if
+the first character is an uppercase letter
+all other characters are lowercase letters
+(In the string "hello, world!", there are two words: "hello," and "world!". You can loop through them using "Hello, world!".split(" ") in Python.)"""
+
+
+def count_title_case(s):
+    count = 0
+    for word in s.split(" "):
+        if len(word) > 0 and word[0].isupper() and word[1:].islower():
+            count += 1
+    return count
