@@ -70,3 +70,17 @@ def compare_scores(stringA, stringB):
         return 1
     else:
         return 0
+
+
+"""Complete the function named factorial such that it returns 1 × 2 × ... × n. (If the input is 0, return 1. ) You may assume the input n is a non-negative integer.
+
+Note: you must not use the for or while keywords."""
+
+
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+
+print(factorial(0))
