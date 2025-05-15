@@ -55,3 +55,18 @@ None, if stringA or stringB are not strings.
 -1, if stringA has a strictly lower score than stringB,
 1, if stringA has a strictly higher score than stringB,
 0, if they have the same score."""
+
+
+def compare_scores(stringA, stringB):
+    if not isinstance(stringA, str) or not isinstance(stringB, str):
+        return None
+
+    scoreA = get_score(stringA)
+    scoreB = get_score(stringB)
+
+    if scoreA < scoreB:
+        return -1
+    elif scoreA > scoreB:
+        return 1
+    else:
+        return 0
