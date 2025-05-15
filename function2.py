@@ -45,3 +45,13 @@ while num > 0:
     num = num // 10         # Remove the last digit
 
 print("Reversed number:", reverse)
+
+"""Assume the existence of a function get_score that takes a single string input and returns an int.
+(⚠️ get_score may crash if the inputs aren't strings!)
+
+Complete the function compare_scores so that it returns...
+
+None, if stringA or stringB are not strings.
+-1, if stringA has a strictly lower score than stringB,
+1, if stringA has a strictly higher score than stringB,
+0, if they have the same score."""
