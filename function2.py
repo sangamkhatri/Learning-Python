@@ -119,3 +119,41 @@ def count_title_case(s):
         if len(word) > 0 and word[0].isupper() and word[1:].islower():
             count += 1
     return count
+
+
+def is_prime(n):
+    """
+    Takes an int n, with n >= 2,
+    - returns True if it's a prime number (only factors are 1 and n)
+    - returns False otherwise
+    """
+    oh_no = False
+    for x in range(2, n):  # <-- at this line, 'oh_no' says whether any numbers we've checked are factors
+        if is_multiple_of(n, x):
+            oh_no = True
+    # now, 'oh_no' says whether any of range(2,n) are factors
+    return (not oh_no)
+
+
+def is_prime2(n):
+    for x in range(2, n):  # <-- at this line, 'oh_no' says whether any numbers we've checked are factors
+        if is_multiple_of(n, x):
+            return False
+            # ('return' ends the function *immediately*)
+    # if we get here, that means we didn't return False earlier
+    return True
+
+
+def is_multiple_of(n, divisor):
+    """
+    Takes two ints, both > 0.
+    Returns True if n is a multiple of divisor.
+    Returns False otherwise.
+    """
+    return (n % divisor == 0)
+
+
+print(is_multiple_of(6, 4))  # expected answer: False
+pear = is_multiple_of(10, 5)  # doesn't print anything
+print(pear)  # expected answer: True
+print(is_prime(35))
