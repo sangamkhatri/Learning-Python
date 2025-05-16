@@ -157,3 +157,15 @@ print(is_multiple_of(6, 4))  # expected answer: False
 pear = is_multiple_of(10, 5)  # doesn't print anything
 print(pear)  # expected answer: True
 print(is_prime(35))
+
+"""Define a function sum_ends_with_and_divisible that when passed 3 integers, (say n, val, divisor), returns the sum of all integers from 1 to n (inclusive) that end with the digit val and are divisible by divisor.
+
+For example, if n = 50, val = 5, divisor = 3
+
+The numbers that end with 5 and are divisible by 3 from 1 to 50 are 15, 35.
+
+So, the sum would be 15 + 45 = 60."""
+def sum_ends_with_and_divisible(n,val,divisor):
+    for i in range(1,n+1):
+        sum=0
+        if i
