@@ -57,19 +57,19 @@ None, if stringA or stringB are not strings.
 0, if they have the same score."""
 
 
-def compare_scores(stringA, stringB):
-    if not isinstance(stringA, str) or not isinstance(stringB, str):
-        return None
+# def compare_scores(stringA, stringB):
+#     if not isinstance(stringA, str) or not isinstance(stringB, str):
+#         return None
 
-    scoreA = get_score(stringA)
-    scoreB = get_score(stringB)
+#     scoreA = get_score(stringA)
+#     scoreB = get_score(stringB)
 
-    if scoreA < scoreB:
-        return -1
-    elif scoreA > scoreB:
-        return 1
-    else:
-        return 0
+#     if scoreA < scoreB:
+#         return -1
+#     elif scoreA > scoreB:
+#         return 1
+#     else:
+#         return 0
 
 
 """Complete the function named factorial such that it returns 1 × 2 × ... × n. (If the input is 0, return 1. ) You may assume the input n is a non-negative integer.
