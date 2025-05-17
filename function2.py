@@ -165,7 +165,3 @@ For example, if n = 50, val = 5, divisor = 3
 The numbers that end with 5 and are divisible by 3 from 1 to 50 are 15, 35.
 
 So, the sum would be 15 + 45 = 60."""
-def sum_ends_with_and_divisible(n,val,divisor):
-    for i in range(1,n+1):
-        sum=0
-        if i
