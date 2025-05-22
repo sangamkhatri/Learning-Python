@@ -23,3 +23,17 @@ students = {
     "Sanjeet": 90
 }
 print_student_grades(students)
+# Task: Create a function that prints employee names and roles.
+
+
+def print_employees(employees):
+    for emp in employees:
+        print(f"{emp['name']} works as a {emp['role']}")
+
+
+employee_list = [
+    {"name": "Sangam", "role": "Data Analyst"},
+    {"name": "Abhinav", "role": "Project Manager"},
+    {"name": "Nischal", "role": "Developer"}
+]
+print_employees(employee_list)
