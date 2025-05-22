@@ -37,3 +37,17 @@ employee_list = [
     {"name": "Nischal", "role": "Developer"}
 ]
 print_employees(employee_list)
+
+# Task: Return a list of squares of numbers.
+
+
+def get_squares(numbers):
+    squares = []
+    for n in numbers:
+        squares.append(n**2)
+    return squares
+
+
+nums = [1, 2, 3, 4, 5]
+squares = get_squares(nums)
+print(squares)
