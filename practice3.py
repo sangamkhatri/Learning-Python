@@ -51,3 +51,22 @@ def get_squares(numbers):
 nums = [1, 2, 3, 4, 5]
 squares = get_squares(nums)
 print(squares)
+
+# 1. Create a list
+fruits = ["apple", "banana", "cherry"]
+print("Initial list:", fruits)
+
+# 2. Access the second item
+print("Second item:", fruits[1])
+
+# 3. Change 'banana' to 'blueberry'
+fruits[1] = "blueberry"
+print("After changing second item:", fruits)
+
+# 4. Add 'orange' to the end
+fruits.append("orange")
+print("After appending 'orange':", fruits)
+
+# 5. Remove 'apple' from the list
+fruits.remove("apple")
+print("After removing 'apple':", fruits)
