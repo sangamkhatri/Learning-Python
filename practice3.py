@@ -94,3 +94,47 @@ else:
 # 10. Sort the list in reverse order
 numbers.sort(reverse=True)
 print("List sorted in descending order:", numbers)
+
+# 1. Create a nested list (matrix)
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+print("Matrix:")
+for row in matrix:
+    print(row)
+
+# 2. Access a specific element (e.g., element at row 2, column 3)
+print("Element at 2nd row, 3rd column:", matrix[1][2])  # Output: 6
+
+# 3. Flatten the matrix using a nested loop
+flattened = []
+for row in matrix:
+    for num in row:
+        flattened.append(num)
+print("Flattened list:", flattened)
+
+# 4. Use list comprehension to get only even numbers from the flattened list
+even_numbers = [num for num in flattened if num % 2 == 0]
+print("Even numbers:", even_numbers)
+
+# 5. Define a function to return squares of all numbers in a list
+
+
+def square_list(lst):
+    return [x**2 for x in lst]
+
+
+squared = square_list(flattened)
+print("Squares of numbers:", squared)
+
+# 6. Filter numbers greater than 5 from the squared list using a function
+
+
+def filter_greater_than_five(lst):
+    return [x for x in lst if x > 5]
+
+
+filtered = filter_greater_than_five(squared)
+print("Numbers > 5 in squared list:", filtered)
