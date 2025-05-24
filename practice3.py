@@ -70,3 +70,27 @@ print("After appending 'orange':", fruits)
 # 5. Remove 'apple' from the list
 fruits.remove("apple")
 print("After removing 'apple':", fruits)
+
+# 6. Create a list and print its length
+numbers = [10, 20, 30, 40, 50]
+print("Original list:", numbers)
+print("Length of the list:", len(numbers))
+
+# 7. Calculate and print the sum
+total = sum(numbers)
+print("Sum of numbers:", total)
+
+# 8. Loop through the list and print each item
+print("Looping through list:")
+for num in numbers:
+    print("Number:", num)
+
+# 9. Check if 30 is in the list
+if 30 in numbers:
+    print("Found 30 in the list")
+else:
+    print("30 Not found")
+
+# 10. Sort the list in reverse order
+numbers.sort(reverse=True)
+print("List sorted in descending order:", numbers)
