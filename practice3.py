@@ -138,19 +138,3 @@ def filter_greater_than_five(lst):
 
 filtered = filter_greater_than_five(squared)
 print("Numbers > 5 in squared list:", filtered)
-
-return [x**2 for x in lst]
-
-
-squared = square_list(flattened)
-print("Squares of numbers:", squared)
-
-# 6. Filter numbers greater than 5 from the squared list using a function
-
-
-def filter_greater_than_five(lst):
-    return [x for x in lst if x > 5]
-
-
-filtered = filter_greater_than_five(squared)
-print("Numbers > 5 in squared list:", filtered)
