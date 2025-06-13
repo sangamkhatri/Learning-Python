@@ -95,3 +95,57 @@ print("Is 121 Palindrome?:", is_palindrome(121))
 print("LCM of 12 and 18:", lcm(12, 18))
 print("Triangle of 5 rows:")
 print_triangle(5)
+"""Check Perfect Number
+– A number where the sum of its proper divisors equals the number.
+Example: 28 → 1 + 2 + 4 + 7 + 14 = 28
+
+Find All Factors of a Number
+
+Count Words in a Sentence
+
+Check for a Prime Number in a Range
+
+Sum of Even and Odd Digits Separately"""
+
+
+def is_perfect(n):
+    total = 0
+    for i in range(1, n):
+        if n % i == 0:
+            total += i
+    return total == n
+
+
+def find_factors(n):
+    return [i for i in range(1, n+1) if n % i == 0]
+
+
+def count_words(sentence):
+    return len(sentence.strip().split())
+
+
+def primes_in_range(start, end):
+    return [n for n in range(start, end+1) if is_prime(n)]
+
+
+def sum_even_odd_digits(n):
+    even_sum = 0
+    odd_sum = 0
+    while n > 0:
+        digit = n % 10
+        if digit % 2 == 0:
+            even_sum += digit
+        else:
+            odd_sum += digit
+        n //= 10
+    return even_sum, odd_sum
+
+
+# Example calls for new logic
+print("Is 28 perfect?:", is_perfect(28))
+print("Factors of 18:", find_factors(18))
+print("Words in 'Hello world from Python':",
+      count_words("Hello world from Python"))
+print("Prime numbers between 10 and 30:", primes_in_range(10, 30))
+even, odd = sum_even_odd_digits(123456)
+print("Even and Odd digit sum of 123456:", even, odd)
