@@ -56,4 +56,42 @@ print("Is 29 prime?:", is_prime(29))
 print("Reverse of 1234:", reverse_number(1234))
 print("Vowels in 'Hello World':", count_vowels("Hello World"))
 print("Fibonacci (first 7 numbers):", fibonacci(7))
-""""
+""""Check Armstrong Number – e.g., 153 → 1³ + 5³ + 3³ = 153
+
+Check Palindrome (number) – same forward and backward
+
+Find LCM of two numbers
+
+Pattern Printing – Right triangle of stars (e.g., for n = 5)"""
+
+
+def is_armstrong(n):
+    digits = str(n)
+    power = len(digits)
+    return sum(int(d)**power for d in digits) == n
+
+
+def is_palindrome(n):
+    return str(n) == str(n)[::-1]
+
+
+def lcm(a, b):
+    greater = max(a, b)
+    while True:
+        if greater % a == 0 and greater % b == 0:
+            return greater
+        greater += 1
+
+
+def print_triangle(n):
+    for i in range(1, n + 1):
+        print('*' * i)
+
+# Example function calls
+
+
+print("Is 153 Armstrong?:", is_armstrong(153))
+print("Is 121 Palindrome?:", is_palindrome(121))
+print("LCM of 12 and 18:", lcm(12, 18))
+print("Triangle of 5 rows:")
+print_triangle(5)
