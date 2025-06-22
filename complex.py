@@ -84,3 +84,95 @@ acc = BankAccount("Sangam")
 acc.deposit(200)
 acc.withdraw(50)
 acc.show_balance()
+# 🧠 Advanced Python Basics - Part 2
+
+# 1. Password Strength Checker
+
+
+def check_password_strength(password):
+    import string
+    has_upper = any(c.isupper() for c in password)
+    has_lower = any(c.islower() for c in password)
+    has_digit = any(c.isdigit() for c in password)
+    has_special = any(c in string.punctuation for c in password)
+
+    if len(password) >= 8 and has_upper and has_lower and has_digit and has_special:
+        return "Strong"
+    elif len(password) >= 6:
+        return "Medium"
+    else:
+        return "Weak"
+
+# 2. Prime Number Finder
+
+
+def find_primes(limit):
+    primes = []
+    for num in range(2, limit + 1):
+        is_prime = True
+        for div in range(2, int(num**0.5) + 1):
+            if num % div == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(num)
+    return primes
+
+# 3. Class Inheritance: Employee and Manager
+
+
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def show(self):
+        return f"Employee: {self.name}, Salary: ${self.salary}"
+
+
+class Manager(Employee):
+    def __init__(self, name, salary, team_size):
+        super().__init__(name, salary)
+        self.team_size = team_size
+
+    def show(self):
+        return f"Manager: {self.name}, Salary: ${self.salary}, Team size: {self.team_size}"
+
+# 4. Anagram Checker
+
+
+def is_anagram(str1, str2):
+    return sorted(str1.lower()) == sorted(str2.lower())
+
+# 5. Number Pattern Printer (Triangle)
+
+
+def print_number_triangle(n):
+    for i in range(1, n + 1):
+        print(" ".join(str(x) for x in range(1, i + 1)))
+
+# ---------------- RUNNING THEM ----------------
+
+
+# Password Strength
+print("\n🔒 Password Strength:")
+print("Password 'Hello@123':", check_password_strength("Hello@123"))
+
+# Prime Numbers up to 30
+print("\n🔢 Primes up to 30:")
+print(find_primes(30))
+
+# Employee vs Manager
+print("\n👥 Employee and Manager Info:")
+e = Employee("Alice", 50000)
+m = Manager("Bob", 80000, 5)
+print(e.show())
+print(m.show())
+
+# Anagram Check
+print("\n🔁 Anagram Check ('listen', 'silent'):")
+print(is_anagram("listen", "silent"))
+
+# Number Triangle
+print("\n🔺 Number Triangle Pattern (n=5):")
+print_number_triangle(5)
